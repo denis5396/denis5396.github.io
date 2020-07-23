@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="kontakt.css" />
+    <title>Elektro Plus | Kontakt</title>
+  </head>
+  <body>
+    <section id="contactshowcase">
+      <nav id="nav">
+        <a id="homelink" href="index.html">
+          <div id="logo">
+            <img id="logoimg" src="img/giphy5.gif" alt="" />
+            <span id="ones">Elektro</span>
+            <span id="twos">Plus</span>
+          </div>
+        </a>
+        <input type="checkbox" name="hmenu" id="hmenu" />
+        <div id="mobilemenu">
+          <div id="mobilemenuin"></div>
+        </div>
+        <div id="hambmobilemenu">
+          <ul>
+            <li id="pocfix"><a href="./index.html">Početna</a></li>
+            <li><a href="./usluge.html">Usluge</a></li>
+            <li><a href="./onama.html">O nama</a></li>
+            <li><a href="/radovi.html">Radovi</a></li>
+            <li><a href="./kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+        <ul>
+          <li id="liimg"><img src="/img/giphy1.gif" alt="" /></li>
+          <li>
+            <a href="index.html">Početna</a><span class="underline"></span>
+          </li>
+          <li>
+            <a href="./usluge.html">Usluge</a><span class="underline"></span>
+          </li>
+          <li>
+            <a href="./onama.html">O nama</a><span class="underline"></span>
+          </li>
+          <li>
+            <a href="./radovi.html">Radovi</a><span class="underline"></span>
+          </li>
+          <li>
+            <a href="./kontakt.html" class="current">Kontakt</a
+            ><span class="underline"></span>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <section id="contact">
+      <div id="contactb">
+        <div id="contactbl">
+          <div id="contactblicons">
+            <h2>Kontaktirajte nas, mi vas očekujemo</h2>
+
+            <div class="contactcol">
+              <i class="fas fa-map-marker-alt fa-3x"></i>
+              <h3>Lokacija</h3>
+              <p>Maršala Tita 4, Sarajevo</p>
+            </div>
+            <div class="contactcol">
+              <i class="fas fa-phone-alt fa-3x"></i>
+              <h3>Telefonski broj</h3>
+              <p>+387 33 246 495</p>
+            </div>
+            <div class="contactcol">
+              <i class="fas fa-envelope-open-text fa-3x"></i>
+              <h3>E-mail</h3>
+              <p>ElektroPlus@gmail.com</p>
+            </div>
+            <div class="contactcol">
+              <i class="fas fa-business-time fa-3x"></i>
+              <h3>Radno vrijeme</h3>
+              <p>pon-pet: 08:00 - 17:00 / sub: 15:00</p>
+              <!-- <p>subota: 08:00 - 15:00</p> -->
+            </div>
+          </div>
+          <div id="contactbr">
+            <iframe
+              id="map"
+              width="500"
+              height="600"
+              gestureHandling="greedy"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              src="https://maps.google.com/maps?width=520&amp;height=520&amp;hl=en&amp;q=titova%204%20Sarajevo+(Mar%C5%A1ala%20Tita%204)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <form action="#">
+        <label for="poruka">Pitanje</label>
+        <textarea name="poruka" id="poruka" cols="30" rows="10"></textarea>
+        <label for="name">Ime i Prezime</label>
+        <input type="text" name="name" id="name" />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+        <input type="submit" value="Pošaljite" />
+      </form>
+
+      <a style="opacity: 0;" href="http://maps-generator.com/"
+        >embedding google map</a
+      >
+    </section>
+    <script
+      type="text/javascript"
+      src="https://embedmaps.com/google-maps-authorization/script.js?id=831c495e841d33d6a9fb9ffffb79a29e96062d97"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/bcd0a18c7e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="mobile.js"></script>
+  </body>
+</html>
