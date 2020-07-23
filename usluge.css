@@ -3371,4 +3371,18 @@ html {
   #tagcnt {
     width: 60%;
   }
+  #jakastrp {
+    margin-bottom: 0rem;
+    grid-template-rows: 1fr 0.01fr;
+  }
+  #jakastr::before {
+    bottom: -10%;
+  }
+  .icona {
+    bottom: -12%;
+  }
+  #knxtitle {
+    height: fit-content;
+    padding: 2rem;
+  }
 }

@@ -18,6 +18,11 @@ if (window.innerWidth > 500) {
   sliderwidtho.style.width = `${boxWidtho * 3 + 12}px`;
 }
 
+// orientation change
+window.addEventListener('orientationchange', () => {
+  window.location.reload();
+});
+
 function bacajo() {
   unlocko = false;
   parento.style.transition = 'transform .5s ease';

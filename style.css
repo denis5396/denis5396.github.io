@@ -2284,3 +2284,19 @@ i {
     overflow-x: hidden;
   }
 }
+@media only screen and (max-width: 700px) and (max-height: 400px) {
+  #lookaround {
+    height: fit-content;
+  }
+  #lookaroundtxt {
+    padding-bottom: 2rem;
+    padding-top: 5rem;
+  }
+  .box:hover {
+    height: 37rem;
+  }
+  .box > .content h2 {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+}
