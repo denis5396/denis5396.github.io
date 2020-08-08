@@ -5,9 +5,8 @@ const sld = document.querySelectorAll('.sld');
 let clickable = true;
 let count = 1;
 sliderux.style.transition = 'transform 0.5s ease';
-
+let countS = 1;
 window.addEventListener('load', (event) => {
-  let countS = 1;
   let loop = setInterval(() => {
     if (clickable) {
       clickable = false;
