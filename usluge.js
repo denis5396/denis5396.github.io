@@ -6,32 +6,9 @@ let clickable = true;
 let count = 1;
 sliderux.style.transition = 'transform 0.5s ease';
 
-// Auto slider
-let countS = 1;
-let loop = setInterval(() => {
-  if (clickable) {
-    clickable = false;
-    count++;
-
-    sliderux.style.transition = 'transform 0.5s ease';
-
-    changeSlide();
-    setTimeout(() => {
-      clickable = false;
-      if (count === sld.length - 1) {
-        sliderux.style.transition = 'none';
-      }
-      identify();
-    }, 1000);
-  }
-}, 3000);
-sliderux.addEventListener('mouseenter', mouseE);
-sliderux.addEventListener('mouseleave', mouseL);
-function mouseE() {
-  clearInterval(loop);
-}
-function mouseL() {
-  loop = setInterval(() => {
+window.addEventListener('load', (event) => {
+  let countS = 1;
+  let loop = setInterval(() => {
     if (clickable) {
       clickable = false;
       count++;
@@ -48,7 +25,33 @@ function mouseL() {
       }, 1000);
     }
   }, 3000);
-}
+  sliderux.addEventListener('mouseenter', mouseE);
+  sliderux.addEventListener('mouseleave', mouseL);
+  function mouseE() {
+    clearInterval(loop);
+  }
+  function mouseL() {
+    loop = setInterval(() => {
+      if (clickable) {
+        clickable = false;
+        count++;
+
+        sliderux.style.transition = 'transform 0.5s ease';
+
+        changeSlide();
+        setTimeout(() => {
+          clickable = false;
+          if (count === sld.length - 1) {
+            sliderux.style.transition = 'none';
+          }
+          identify();
+        }, 1000);
+      }
+    }, 3000);
+  }
+});
+// Auto slider
+
 // klik za više btni
 // const jakaStruja = document.querySelector('#jakastr');
 // const slabaStruja = document.querySelector('#slabastr');
